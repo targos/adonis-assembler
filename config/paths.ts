@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-export const ACE_FILE_NAME = 'ace'
+export const ACE_FILE_NAME = 'ace.js'
 export const DEFAULT_BUILD_DIR = 'build'
 export const RCFILE_NAME = '.adonisrc.json'
 export const ENV_FILES = ['.env', '.env.testing']

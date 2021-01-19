@@ -9,6 +9,7 @@
 
 import execa from 'execa'
 import { logger as uiLogger } from '@poppinss/cliui'
+import { ACE_FILE_NAME } from '../../config/paths'
 
 const WARN_MESSAGE = [
 	'Unable to generate manifest file.',
@@ -49,7 +50,7 @@ export class Manifest {
 	 */
 	public async generate(): Promise<boolean> {
 		try {
-			const response = await execa.node('ace', ['generate:manifest'], {
+			const response = await execa.node(ACE_FILE_NAME, ['generate:manifest'], {
 				buffer: true,
 				nodeOptions: [],
 				cwd: this.appRoot,
